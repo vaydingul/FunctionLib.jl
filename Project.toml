@@ -1,0 +1,4 @@
+name = "FunctionLib"
+uuid = "831199b4-b228-43a0-9d39-c31c50af4323"
+authors = ["Volkan Aydıngül <volkanaydingul@gmail.com>"]
+version = "0.1.0"
