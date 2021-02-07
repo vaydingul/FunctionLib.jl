@@ -7,7 +7,7 @@ struct FunctionHolder
 	f::Function
 	pos_args # Positional arguments
 	key_args # Keyword arguments
-	FunctionHolder() = new()
+	#FunctionHolder() = new()
 end
 
 # Callable object definitions
