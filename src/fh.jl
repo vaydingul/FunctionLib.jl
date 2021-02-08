@@ -15,7 +15,7 @@ end
 (f::FunctionHolder)() = f.f(f.pos_args...; f.key_args...)
 
 
-function show(io::IO, fh::NetworkData)
+function show(io::IO, fh::FunctionHolder)
 
 	println("\nFunction Holder:")
 	println("Function => ", fh.f)
@@ -24,8 +24,8 @@ function show(io::IO, fh::NetworkData)
 	
 	end
 	
-	function show(io::IO, ::MIME"text/plain", nd::NetworkData{T}) where T <: AbstractStatus
+	function show(io::IO, ::MIME"text/plain", fh::FunctionHolder{T})
 		
-		show(io, d)
+		show(io, fh)
 	
 	end
