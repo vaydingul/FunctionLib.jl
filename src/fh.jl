@@ -22,10 +22,10 @@ function show(io::IO, fh::FunctionHolder)
 	println("Positional Arguments => ", fh.pos_args)
 	println("Keyword Arguments => ", fh.key_args, "\n")
 	
-	end
+end
 	
-	function show(io::IO, ::MIME"text/plain", fh::FunctionHolder)
+function show(io::IO, ::MIME"text/plain", fh::FunctionHolder)
 		
 		show(io, fh)
 	
-	end
+end
