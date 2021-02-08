@@ -24,7 +24,7 @@ function show(io::IO, fh::FunctionHolder)
 	
 	end
 	
-	function show(io::IO, ::MIME"text/plain", fh::FunctionHolder{T})
+	function show(io::IO, ::MIME"text/plain", fh::FunctionHolder)
 		
 		show(io, fh)
 	
